@@ -1,0 +1,118 @@
+.search-results {
+  background: $white2;
+  margin: 120px -10px 0;
+  padding: 0 10px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    margin-bottom: 5px;
+    background: $color_input;
+    font-size: 18px;
+    transition: 0.2s;
+    font-family: $font_1, $font_2;
+    color: $black;
+    user-select: none;
+    p {
+      font-family: $font_1, $font_2;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.white {
+  background: $color_input;
+  border: solid 1px $color_green;
+}
+
+.checked {
+  color: $color_grey;
+  text-decoration: line-through;
+}
+
+.options {
+  font-family: $font_1, $font_2;
+  color: $color_grey;
+  margin-bottom: 0;
+  font-size: 14px;
+  display: none;
+  a {
+    color: $color_grey;
+    &:hover {
+      color: $color_dgrey;
+    }
+  }
+  span {
+    display: inline;
+  }
+  p {
+    display: inline;
+  }
+}
+
+.tasks {
+  font-style: normal;
+}
+
+.date {
+  font-size: 14px;
+  color: $color_lgrey;
+  font-family: $font_1, $font_2;
+}
+
+.close {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  border: solid 1px;
+  padding: 0 5px;
+  color: $color_gray1;
+  &:hover {
+    color: $color_gray1;
+    border-radius: 0;
+    border: solid 1px;
+    transition-delay: 0.2s;
+  }
+}
+
+.desc {
+  color: $color_focus;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 70%;
+  outline: none;
+  margin: 0 160px 0 20px;
+}
+
+.clear {
+  display: none;
+  float: right;
+}
+
+.instructions {
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.site-header .title {
+  background-size: 280px 55px;
+  height: 55px;
+  margin: 40px auto 80px;
+  text-align: center;
+  font-family: $font_0, $font_2;
+  letter-spacing: 2px;
+  border-bottom: solid 4px $coral;
+  overflow: hidden;
+  color: $coral;
+  width: 280px;
+  font-size: 50px;
+}

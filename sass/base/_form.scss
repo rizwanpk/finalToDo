@@ -1,0 +1,44 @@
+input[type=checkbox] {
+    &.done-todo {
+        float: left;
+        margin: 6px 25px 0 5px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $white;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 3px $white_10;
+    }
+    &:checked {
+        background: $color_atlantis_approx;
+    }
+}
+
+input[type=text].add-todo {
+    -webkit-appearance: none;
+    background: $white;
+    border: 0;
+    border-bottom: solid 1px;
+    font-family: $font_1, $font_2;
+    color: $black;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 10px;
+    float: left;
+&:focus {
+     background-color: $yellow_9 !important;
+     outline: none;
+ }
+}
+input[type="checkbox"]:focus {
+    outline: 0;
+}
+form hr {
+    border-bottom: 1px solid $color_red;
+}

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: $font_0;
+    src: $url_0;
+}
+@font-face {
+    font-family: $font_1;
+    src: $url_1;
+}
+@media(min-width: 650px) {
+    label {
+        background-size: 30px 20px;
+        height: 20px;
+        margin-top: -20px;
+        width: 190px;
+    }
+    .search-results {
+        margin: 150px -20px 0;
+        padding: 0 20px;
+        margin: 150px -20px 0;
+        padding: 0 20px;
+    }
+    .site-header .title {
+        background-size: 277px 60px;
+        height: 60px;
+        width: 277px;
+    }
+    input[type=text].add-todo {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 38px;
+    }
+}
+label {
+    background-size: 20px 20px;
+    font-family: $font_1, $font_2;
+    cursor: text;
+    height: 20px;
+    margin-top: -30px;
+    position: absolute;
+    z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+    -moz-font-feature-settings: "liga" 1, "dlig" 1;
+    -ms-font-feature-settings: "liga" 1, "dlig" 1;
+    -o-font-feature-settings: "liga" 1, "dlig" 1;
+    font-feature-settings: "liga" 1, "dlig" 1;
+}

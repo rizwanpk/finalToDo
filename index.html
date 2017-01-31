@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<section class="main">
+
+    <header class="site-header">
+        <h1 class="title">To do list</h1>
+    </header>
+
+    <form class="app-todo" autocomplete="off">
+        <label>What needs to be done?</label>
+        <input class="add-todo" name="add-todo" type="text" required>
+    </form>
+
+    <div class="search-results">
+        <ul class="list"></ul>
+    </div>
+
+    <div class="options well well-small">
+        <i class="tasks"> </i> <span class="items"> </span>
+        <p> left</p>
+        <a href="#" class="clear">Delete the list</a>
+    </div>
+
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

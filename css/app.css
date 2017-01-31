@@ -1,0 +1,250 @@
+/*
+  Made by Rizwan Yousaf
+*/
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myFirstFont";
+  src: url(../fonts/Museo_Slab_1000.otf);
+}
+
+@font-face {
+  font-family: "myFirstFont1";
+  src: url(../fonts/Museo_Slab_300.otf);
+}
+
+@media (min-width: 650px) {
+  label {
+    background-size: 30px 20px;
+    height: 20px;
+    margin-top: -20px;
+    width: 190px;
+  }
+  .search-results {
+    margin: 150px -20px 0;
+    padding: 0 20px;
+    margin: 150px -20px 0;
+    padding: 0 20px;
+  }
+  .site-header .title {
+    background-size: 277px 60px;
+    height: 60px;
+    width: 277px;
+  }
+  input[type=text].add-todo {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 38px;
+  }
+}
+
+label {
+  background-size: 20px 20px;
+  font-family: "myFirstFont1", "sans-serif";
+  cursor: text;
+  height: 20px;
+  margin-top: -30px;
+  position: absolute;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga" 1, "dlig" 1;
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+input[type=checkbox].done-todo {
+  float: left;
+  margin: 6px 25px 0 5px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+input[type=checkbox]:checked {
+  background: yellowgreen;
+}
+
+input[type=text].add-todo {
+  -webkit-appearance: none;
+  background: #fff;
+  border: 0;
+  border-bottom: solid 1px;
+  font-family: "myFirstFont1", "sans-serif";
+  color: #000;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  width: 100%;
+  padding-left: 10px;
+  float: left;
+}
+
+input[type=text].add-todo:focus {
+  background-color: rgba(255, 255, 0, 0.09) !important;
+  outline: none;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+form hr {
+  border-bottom: 1px solid #eb6841;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  width: 100%;
+}
+
+.search-results {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 120px -10px 0;
+  padding: 0 10px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.list li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin-bottom: 5px;
+  background: rgba(154, 205, 50, 0.09);
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: "myFirstFont1", "sans-serif";
+  color: #000;
+  user-select: none;
+}
+
+.list li p {
+  font-family: "myFirstFont1", "sans-serif";
+}
+
+.list li:last-child {
+  border: none;
+}
+
+.white {
+  background: rgba(154, 205, 50, 0.09);
+  border: solid 1px #79f279;
+}
+
+.checked {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.options {
+  font-family: "myFirstFont1", "sans-serif";
+  color: #999;
+  margin-bottom: 0;
+  font-size: 14px;
+  display: none;
+}
+
+.options a {
+  color: #999;
+}
+
+.options a:hover {
+  color: #333;
+}
+
+.options span {
+  display: inline;
+}
+
+.options p {
+  display: inline;
+}
+
+.tasks {
+  font-style: normal;
+}
+
+.date {
+  font-size: 14px;
+  color: #777;
+  font-family: "myFirstFont1", "sans-serif";
+}
+
+.close {
+  border-radius: 50%;
+  border: solid 1px;
+  padding: 0 5px;
+  color: #686868;
+}
+
+.close:hover {
+  color: #686868;
+  border-radius: 0;
+  border: solid 1px;
+  transition-delay: 0.2s;
+}
+
+.desc {
+  color: #555;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 70%;
+  outline: none;
+  margin: 0 160px 0 20px;
+}
+
+.clear {
+  display: none;
+  float: right;
+}
+
+.instructions {
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.site-header .title {
+  background-size: 280px 55px;
+  height: 55px;
+  margin: 40px auto 80px;
+  text-align: center;
+  font-family: "myFirstFont", "sans-serif";
+  letter-spacing: 2px;
+  border-bottom: solid 4px #ff7f50;
+  overflow: hidden;
+  color: #ff7f50;
+  width: 280px;
+  font-size: 50px;
+}
